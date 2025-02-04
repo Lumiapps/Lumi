@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  deepseek-Lumi-ai:
+    container_name: deepseek-Lumi-ai
+    image: vinlic/deepseek-Lumi-ai:latest
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - TZ=Asia/Shanghai
+      - DEEP_SEEK_CHAT_AUTHORIZATION=UFV8fRYleCxxxxxxXYMMKEOJtOmDKffP2W6Km
