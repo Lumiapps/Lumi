@@ -8,8 +8,8 @@
   <a href="https://x.com/lumiapps">
   <img src="https://img.shields.io/static/v1?message=Twitter&logo=twitter&label=&color=1DA1F2&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="twitter logo" />
   </a>
-  <a href="/">
-  <img src="https://raw.githubusercontent.com/Lumiapps/Lumi/c463153be8bd537248f297229a4c3e78365d2315/our-website.png" height="25" alt="Our Website" />
+  <a href="https://lumiapps.xyz/">
+  <img src="https://raw.githubusercontent.com/Lumiapps/Lumi/d7213504cd1c828c300f0e4a058015a8fe8bcc17/lumi-project-img.png" height="25" alt="Our Website" />
   </a>
   
 </div>
