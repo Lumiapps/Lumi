@@ -1,180 +1,128 @@
-# Lumi AI 🚀
+<div align="center">
+  <img height="300" src="https://raw.githubusercontent.com/Lumiapps/Lumi/97b4cc0f48349bce74d9cbe9d007eba7fe1a17da/lumi.jpg"  />
+</div>
 
-<!-- ![AI Tools Image](./doc/Lumi-ai.png) -->
+###
 
-## Why DeepSeek? 🤔
+<div align="center">
+  <a href="https://x.com/lumiapps">
+  <img src="https://img.shields.io/static/v1?message=Twitter&logo=twitter&label=&color=1DA1F2&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="twitter logo" />
+  </a>
+  <a href="/">
+  <img src="https://raw.githubusercontent.com/Lumiapps/Lumi/c463153be8bd537248f297229a4c3e78365d2315/our-website.png" height="25" alt="Our Website" />
+  </a>
+  
+</div>
 
-At **Lumi**, we are driven by a passion for revolutionizing the intersection of decentralized technologies and artificial intelligence. **DeepSeek** empowers users with innovative and accessible tools that enhance the Web3 ecosystem. Here’s why DeepSeek stands out:
+###
 
-- **Advanced Natural Language Processing** 🤖: DeepSeek’s AI models provide state-of-the-art reasoning and generative capabilities, enabling intuitive interactions and intelligent responses.
-- **Customizability** 🛠️: Our AI can adapt to the unique needs of Web3 users, from analyzing on-chain data to optimizing smart contract interactions.
-- **Scalability and Reliability** ⚡: Designed to handle the complex demands of decentralized applications, DeepSeek ensures speed, reliability, and performance as our user base grows.
-- **Developer-Centric** 💻: By simplifying complex concepts and empowering developers with actionable insights, DeepSeek fosters innovation and expertise in the Web3 space.
 
-DeepSeek isn’t just a tool—it’s a strategic partner for Web3 innovation, offering the flexibility to experiment, iterate, and deliver value-driven experiences.
+###
 
-## Features ✨
 
-- **High-Speed Streaming Output** ⚡: Supports seamless, real-time interactions.
-- **Multi-Turn Conversations** 🗣️: Engage in dynamic, context-aware conversations.
-- **Web-Connected Searches** 🌐: Tap into the internet for up-to-date insights and information.
-- **Silent Deep Reasoning** 🤫: Perform in-depth analysis without intrusive output.
-- **Effortless Deployment** 🚀: Zero-configuration setup with multi-token support.
 
-DeepSeek is fully compatible with the ChatGPT API interface, ensuring ease of integration into your existing systems.
+<p align="left">Lumi systems have enhanced prompt models with the capability to perform code analysis by integrating a multi layered architecture that combines contextual intelligence with domain specific adaptations, specifically tailored to the intricacies of Web3 ecosystems.  Beyond merely parsing Solidity code, it identifies patterns, anticipates edge cases, and provides tailored recommendations for optimizing smart contract performance and security. For instance, it can detect subtle vulnerabilities like reentrancy attacks or integer overflows, while also suggesting gas efficient coding practices that save costs and enhance scalability. What sets our model apart is its ability to learn and adapt to the rapidly changing landscape of blockchain protocols, ensuring it stays relevant as new standards and technologies emerge. Additionally, it offers educational scaffolding for developers, breaking down complex concepts into digestible insights and explaining the "why" behind specific coding practices. This empowers users to not only implement solutions but also to deeply understand the principles driving their decisions, fostering a culture of innovation and expertise. By integrating these capabilities, our model becomes a strategic partner in the Web3 journey, equipping users with the tools to build, deploy, and iterate with confidence and precision. 
+At its core, the model leverages fine-tuned transformer-based architectures, such as those underpinning LLMs, but extends their functionality through task specific embeddings and adaptive learning mechanisms. These embeddings are derived from a curated dataset of Solidity code, smart contract deployments, and blockchain interactions, enabling the model to recognize patterns and nuances unique to decentralized systems (we plan to experiment with this aspect of training by adding transformative pieces of extremely nuanced Web3 data as well). 
 
-## Table of Contents 📚
+Specifically, for us to embed contextual intelligence, we employ a hybrid training approach that combines supervised learning on annotated datasets with self supervised learning on raw, unstructured blockchain data. This dual approach allows the model to not only understand the syntactic structure of Solidity code but also grasp the semantic and functional implications of specific implementations within Web3 environments. For example, the model is trained to identify and contextualize common smart contract vulnerabilities (reentrancy, gas limit issues) by analyzing real world exploit scenarios and their corresponding fixes. This is further augmented by graph based representations of contract interactions, which map out the flow of data and control across multiple contracts, enabling the model to infer higher level relationships and dependencies.</p>
 
-- [Disclaimer](#disclaimer)
-- [Demo Showcase](#demo-showcase)
-- [Getting Started](#getting-started)
-- [Multi-Account Integration](#multi-account-integration)
-- [Deployment Options](#deployment-options)
-  - [Docker Deployment](#docker-deployment)
-  - [Docker-Compose Deployment](#docker-compose-deployment)
-  - [Render Deployment](#render-deployment)
-  - [Vercel Deployment](#vercel-deployment)
-  - [Native Deployment](#native-deployment)
-- [Recommended Clients](#recommended-clients)
-- [API Endpoints](#api-endpoints)
-  - [Chat Completion](#chat-completion)
-  - [Token Status Check](#token-status-check)
-- [Best Practices](#best-practices)
-  - [Nginx Optimization](#nginx-optimization)
-  - [Token Usage Notes](#token-usage-notes)
-- [Star History](#star-history)
+###
 
-## Disclaimer ⚠️
+<h3 align="left">To further break down "environmental" functionalities, we will explain the technical architectures and how these components interlink to create a seamless, secure, and collaborative development environment. Each stage is designed to ensure users can build, test, and deploy their projects with confidence, by leveraging each and every one of Lumi's aspects of functionality. </h3>
 
-- **Unstable APIs**: Reverse-engineered APIs are inherently unstable. For consistent performance, consider using the official DeepSeek API.
-- **Research Use Only**: This project is for educational and research purposes only. No commercial use is allowed.
-- **Risk Responsibility**: Usage is at your own risk. Misuse of the API could lead to service bans or other issues.
+###
 
-## Setup Instructions 🛠️
 
-### Preparation 📝
+<h3>Sandbox: </p>
 
-Ensure your system is capable of connecting to the DeepSeek platform.
 
-### Retrieve Your `userToken` 🔑
+###
 
-1. Start a conversation on the platform.
-2. Open the Developer Console (F12).
-3. Navigate to **Application > LocalStorage** and find the `userToken`.
-4. Use the retrieved token as your `Authorization: Bearer TOKEN`.
+<p>Development and Testing
+The Sandbox is the foundational stage where users build and test their projects in a controlled, isolated environment. Here’s how it works technically:
+Features:
+Tool Integration: The Sandbox provides access to all platform tools, including AI agents, code libraries, design templates, and Web3 APIs. These tools are integrated via modular plugins that users can enable or disable based on their project needs.
+Web3 Simulation: Users can test their projects with or without Web3 integration. For Web3 testing, the platform uses mock blockchain networks  to simulate transactions and smart contract interactions. Test wallets are provided, allowing users to experiment without risking real assets.
+ Debugging: The platform’s AI engine monitors the development process in real time, identifying potential bugs, inefficiencies, or security vulnerabilities. It provides suggestions for fixes and optimizations, ensuring the project is robust before moving to the next stage.
+Interlinking:
+Sandbox → Roam: Once a project is tested and refined, users can push it to Roam for public interaction and feedback. The Sandbox ensures that only stable, functional projects are shared, maintaining the quality of the Roam ecosystem.
+Sandbox → Exert: Projects that pass internal testing can be prepared for deployment via Exert. The Sandbox ensures that all Web3 integrations are secure and functional before moving to the final stage.
 
-## Demo Showcase 🎥
 
-Explore the powerful capabilities of DeepSeek through live demos! Here are a few examples of what DeepSeek can do in action:
+Roam is the interactive stage where users share their projects with the community for feedback and collaboration. Here’s the technical breakdown:</p>
 
-- **Real-time Conversations**: Watch how DeepSeek handles complex, multi-turn conversations with ease.
-- **On-chain Data Analysis**: See how DeepSeek processes Web3 data to generate insightful reports.
+###
 
----
+<h3>Features:</h3>
 
-## Multi-Account Integration 🔄
 
-DeepSeek supports multi-account integration, allowing you to connect multiple wallets or Web3 accounts. Here’s how you can manage them:
+###
 
-1. **Step 1**: Go to the "Account" section in your DeepSeek dashboard.
-2. **Step 2**: Click on "Add Account" and select the platform (Ethereum, Polygon, etc.).
-3. **Step 3**: Follow the authentication steps to integrate each account.
-4. **Step 4**: Use your accounts in parallel for optimized performance.
+<p>Public Instances: Projects uploaded to Roam are hosted on isolated containers (e.g., Docker) to ensure they don’t interfere with other instances. Each instance is assigned a unique URL (within Lumi), making it accessible to other users.
+Test : Users interacting with Roam projects are provided with test wallets (e.g., MetaMask test accounts) to simulate Web3 interactions. These wallets are preloaded with test tokens, allowing users to experiment without financial risk.
+Prevention: All projects uploaded to Roam undergo static and dynamic code analysis to detect malicious behavior. The platform uses tools like Slither for smart contract analysis and sandboxing to isolate potentially harmful code. 
+Interactive Feed: Roam’s feed is powered by a recommendation engine that uses collaborative filtering and clustering algorithms to surface relevant projects. Users can like, comment, and share feedback, fostering a collaborative environment.
+Interlinking</p>
 
----
 
-## Deployment Options 🚀
+###
 
-DeepSeek offers multiple deployment options to suit your needs.
 
-### Docker Deployment 🐳
+<h3>Roam → Sandbox: </h3>
 
-To deploy DeepSeek using Docker, follow these steps:
+###
 
-1. Clone the repository:  
-   `git clone https://github.com/deepseek/deepseek.git`
-2. Navigate to the directory:  
-   `cd deepseek`
-3. Build the Docker image:  
-   `docker build -t deepseek .`
-4. Run the container:  
-   `docker run -d -p 8080:8080 deepseek`
 
----
+<p> Feedback from Roam can be used to refine projects in the Sandbox. Users can iterate on their designs, fix bugs, or add new features based on community input.
+Roam → Exert: Projects that receive positive feedback and pass community testing can be prepared for deployment via Exert. Roam acts as a quality control layer, ensuring only well-received projects move forward.</p>
 
-### Docker-Compose Deployment 🐋
 
-For a multi-container deployment using Docker Compose, follow these steps:
+###
 
-1. Clone the repository:  
-   `git clone https://github.com/deepseek/deepseek.git`
-2. Navigate to the directory:  
-   `cd deepseek`
-3. Build and start services using Docker Compose:  
-   `docker-compose up --build`
-4. Open your browser and go to `http://localhost:8080` to see DeepSeek in action.
+<h3>Exert: </h3>
 
----
+###
 
-### Render Deployment 🎨
 
-Render makes it easy to deploy DeepSeek in a cloud environment.
+<p>Deployment and Real-Time Management
+Exert is the final stage where projects are formally published and made available to users. Here’s how it works technically:
+</p>
 
-1. Go to [Render.com](https://render.com) and create an account.
-2. Connect your GitHub repository.
-3. Select "Web Service" as the type and choose your repository.
-4. Set the environment variables and deploy your application.
 
----
+###
 
-### Vercel Deployment 🌐
 
-Deploying DeepSeek on Vercel is quick and straightforward.
+<h3>Features:</h3>
 
-1. Go to [Vercel.com](https://vercel.com) and sign up.
-2. Connect your GitHub repository to Vercel.
-3. Set up build settings, ensuring that the correct environment variables are added.
-4. Deploy the app and view it at your Vercel URL.
 
----
+###
 
-### Native Deployment 💻
 
-To deploy DeepSeek on your local machine:
+<p>Web3 Integration: Exert handles all Web3 integrations, including smart contract deployment, token minting, and wallet connectivity. The platform uses secure, audited templates for common Web3 functionalities, reducing the risk of vulnerabilities.</p>
 
-1. Clone the repository:  
-   `git clone https://github.com/deepseek/deepseek.git`
-2. Navigate to the directory:  
-   `cd deepseek`
-3. Install dependencies:  
-   `npm install`
-4. Run the application:  
-   `npm start`
 
----
+###
 
-## Recommended Clients 🧑‍💻
 
-Here are some recommended clients for working with DeepSeek's API:
+<h3>Updates:</h3>
 
-- **Postman**: Ideal for testing and making API requests.
-- **Insomnia**: A great alternative to Postman for REST API requests.
-- **Curl**: Command-line tool for making HTTP requests.
 
----
+###
 
-## API Endpoints 🖥️
 
-### Chat Completion 💬
+<p> Once live, projects can be updated in real time. Changes are deployed using continuous integration/continuous deployment (CI/CD) pipelines, ensuring minimal downtime and seamless updates.
+Account Management: Users can add additional accounts (e.g., team members or collaborators) to manage their projects. Role-based access control (RBAC) ensures that each user has the appropriate permissions.
+Security Audits: Before deployment, all projects undergo a final security audit. This includes static code analysis, smart contract auditing, and penetration testing to ensure the project is secure and ready for public use.</p>
 
-The `chat-completion` API allows you to interact with DeepSeek's AI in real-time.
 
-- **Endpoint**: `/api/chat`
-- **Method**: `POST`
-- **Request Body**:
-  ```json
-  {
-    "message": "Hello, Lumi AI!",
-    "userToken": "your-user-token-here"
-  }
-  ```
+###
+
+
+<h3>Interlinking:</h3>
+
+
+###
+
+
+<p>Exert → Sandbox: If issues are detected after deployment, projects can be pulled back into the Sandbox for further testing and refinement. This ensures that live projects remain stable and secure.
+Exert → Roam: Deployed projects can be promoted back to Roam for additional feedback or community engagement. This creates a feedback loop that encourages continuous improvement.</p>
